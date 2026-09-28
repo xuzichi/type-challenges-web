@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# 只读仓库 + 允许向 Pages 发布
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只跑一个部署，新的推送取消排队中的旧任务
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 放在 build 之前：base_path 需要传给 Vite（项目页是 /<repo>，用户页是 /）
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # 类型检查 + 判题语义回归（190 道题的模板必须全部判失败，
+      # 标准答案必须判通过，绕过 @ts-expect-error 的答案必须被 TS2578 拦下）
+      - run: npm run typecheck
+      - run: npm run verify:judge
+
+      - run: npm run build
+        env:
+          VITE_BASE: ${{ steps.pages.outputs.base_path }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

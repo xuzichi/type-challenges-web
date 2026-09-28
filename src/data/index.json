@@ -1,0 +1,3279 @@
+{
+  "challenges": [
+    {
+      "no": 13,
+      "slug": "00013-warm-hello-world",
+      "difficulty": "warm",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Hello World"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 4,
+      "slug": "00004-easy-pick",
+      "difficulty": "easy",
+      "tags": [
+        "union",
+        "built-in"
+      ],
+      "related": [
+        3
+      ],
+      "titles": {
+        "zh-CN": "实现 Pick",
+        "en": "Pick"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 7,
+      "slug": "00007-easy-readonly",
+      "difficulty": "easy",
+      "tags": [
+        "built-in",
+        "readonly",
+        "object-keys"
+      ],
+      "related": [
+        8,
+        9
+      ],
+      "titles": {
+        "zh-CN": "对象属性只读",
+        "en": "Readonly"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 11,
+      "slug": "00011-easy-tuple-to-object",
+      "difficulty": "easy",
+      "tags": [
+        "object-keys"
+      ],
+      "related": [
+        10,
+        472,
+        730,
+        3188
+      ],
+      "titles": {
+        "zh-CN": "元组转换为对象",
+        "en": "Tuple to Object"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 14,
+      "slug": "00014-easy-first",
+      "difficulty": "easy",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        15
+      ],
+      "titles": {
+        "zh-CN": "第一个元素",
+        "en": "First of Array"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 18,
+      "slug": "00018-easy-tuple-length",
+      "difficulty": "easy",
+      "tags": [
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "获取元组长度",
+        "en": "Length of Tuple"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 43,
+      "slug": "00043-easy-exclude",
+      "difficulty": "easy",
+      "tags": [
+        "built-in",
+        "union"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "实现 Exclude",
+        "en": "Exclude"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 189,
+      "slug": "00189-easy-awaited",
+      "difficulty": "easy",
+      "tags": [
+        "promise",
+        "built-in"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Awaited"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 268,
+      "slug": "00268-easy-if",
+      "difficulty": "easy",
+      "tags": [
+        "utils"
+      ],
+      "related": [],
+      "titles": {
+        "en": "If"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 533,
+      "slug": "00533-easy-concat",
+      "difficulty": "easy",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        3057,
+        3060
+      ],
+      "titles": {
+        "en": "Concat"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 898,
+      "slug": "00898-easy-includes",
+      "difficulty": "easy",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Includes"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 3057,
+      "slug": "03057-easy-push",
+      "difficulty": "easy",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        533,
+        3060
+      ],
+      "titles": {
+        "en": "Push"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 3060,
+      "slug": "03060-easy-unshift",
+      "difficulty": "easy",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        533,
+        3057
+      ],
+      "titles": {
+        "en": "Unshift"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 3312,
+      "slug": "03312-easy-parameters",
+      "difficulty": "easy",
+      "tags": [
+        "infer",
+        "tuple",
+        "built-in"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Parameters"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 2,
+      "slug": "00002-medium-return-type",
+      "difficulty": "medium",
+      "tags": [
+        "infer",
+        "built-in"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "获取函数返回类型",
+        "pt-BR": "Obter Tipo de Retorno",
+        "en": "Get Return Type"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 3,
+      "slug": "00003-medium-omit",
+      "difficulty": "medium",
+      "tags": [
+        "union",
+        "built-in"
+      ],
+      "related": [
+        4
+      ],
+      "titles": {
+        "zh-CN": "实现 Omit",
+        "en": "Omit"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 8,
+      "slug": "00008-medium-readonly-2",
+      "difficulty": "medium",
+      "tags": [
+        "readonly",
+        "object-keys"
+      ],
+      "related": [
+        7,
+        9
+      ],
+      "titles": {
+        "zh-CN": "对象部分属性只读",
+        "en": "Readonly 2"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 9,
+      "slug": "00009-medium-deep-readonly",
+      "difficulty": "medium",
+      "tags": [
+        "readonly",
+        "object-keys",
+        "deep"
+      ],
+      "related": [
+        7,
+        8
+      ],
+      "titles": {
+        "zh-CN": "对象属性只读（递归）",
+        "en": "Deep Readonly"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 10,
+      "slug": "00010-medium-tuple-to-union",
+      "difficulty": "medium",
+      "tags": [
+        "infer",
+        "tuple",
+        "union"
+      ],
+      "related": [
+        11,
+        472,
+        730,
+        3188
+      ],
+      "titles": {
+        "zh-CN": "元组转合集",
+        "en": "Tuple to Union"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 12,
+      "slug": "00012-medium-chainable-options",
+      "difficulty": "medium",
+      "tags": [
+        "application"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "可串联构造器",
+        "en": "Chainable Options"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 15,
+      "slug": "00015-medium-last",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        14,
+        16
+      ],
+      "titles": {
+        "zh-CN": "最后一个元素",
+        "en": "Last of Array"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 16,
+      "slug": "00016-medium-pop",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        14,
+        15
+      ],
+      "titles": {
+        "zh-CN": "排除最后一项",
+        "en": "Pop"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 20,
+      "slug": "00020-medium-promise-all",
+      "difficulty": "medium",
+      "tags": [
+        "array",
+        "promise"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Promise.all"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 62,
+      "slug": "00062-medium-type-lookup",
+      "difficulty": "medium",
+      "tags": [
+        "union",
+        "map"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "查找类型",
+        "en": "Type Lookup"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 106,
+      "slug": "00106-medium-trimleft",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        108,
+        4803
+      ],
+      "titles": {
+        "zh-CN": "去除左侧空白",
+        "en": "Trim Left"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 108,
+      "slug": "00108-medium-trim",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        106,
+        4803
+      ],
+      "titles": {
+        "zh-CN": "去除两端空白字符",
+        "en": "Trim"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 110,
+      "slug": "00110-medium-capitalize",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Capitalize"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 116,
+      "slug": "00116-medium-replace",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Replace"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 119,
+      "slug": "00119-medium-replaceall",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "ReplaceAll"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 191,
+      "slug": "00191-medium-append-argument",
+      "difficulty": "medium",
+      "tags": [
+        "arguments"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "追加参数",
+        "en": "Append Argument"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 296,
+      "slug": "00296-medium-permutation",
+      "difficulty": "medium",
+      "tags": [
+        "union"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Permutation"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 298,
+      "slug": "00298-medium-length-of-string",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Length of String"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 459,
+      "slug": "00459-medium-flatten",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Flatten"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 527,
+      "slug": "00527-medium-append-to-object",
+      "difficulty": "medium",
+      "tags": [
+        "object-keys"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Append to object"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 529,
+      "slug": "00529-medium-absolute",
+      "difficulty": "medium",
+      "tags": [
+        "math",
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Absolute"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 531,
+      "slug": "00531-medium-string-to-union",
+      "difficulty": "medium",
+      "tags": [
+        "union",
+        "string"
+      ],
+      "related": [],
+      "titles": {
+        "en": "String to Union"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 599,
+      "slug": "00599-medium-merge",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Merge"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 612,
+      "slug": "00612-medium-kebabcase",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        114
+      ],
+      "titles": {
+        "en": "KebabCase"
+      },
+      "locales": [
+        "en",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 645,
+      "slug": "00645-medium-diff",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Diff"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 949,
+      "slug": "00949-medium-anyof",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "AnyOf"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko"
+      ]
+    },
+    {
+      "no": 1042,
+      "slug": "01042-medium-isnever",
+      "difficulty": "medium",
+      "tags": [
+        "union",
+        "utils"
+      ],
+      "related": [
+        1097,
+        223,
+        4484
+      ],
+      "titles": {
+        "en": "IsNever"
+      },
+      "locales": [
+        "en",
+        "ko"
+      ]
+    },
+    {
+      "no": 1097,
+      "slug": "01097-medium-isunion",
+      "difficulty": "medium",
+      "tags": [
+        "union"
+      ],
+      "related": [
+        1042,
+        223,
+        4484
+      ],
+      "titles": {
+        "en": "IsUnion"
+      },
+      "locales": [
+        "en",
+        "ko"
+      ]
+    },
+    {
+      "no": 1130,
+      "slug": "01130-medium-replacekeys",
+      "difficulty": "medium",
+      "tags": [
+        "object-keys"
+      ],
+      "related": [],
+      "titles": {
+        "en": "ReplaceKeys"
+      },
+      "locales": [
+        "en",
+        "ko"
+      ]
+    },
+    {
+      "no": 1367,
+      "slug": "01367-medium-remove-index-signature",
+      "difficulty": "medium",
+      "tags": [
+        "object-keys"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Remove Index Signature"
+      },
+      "locales": [
+        "en",
+        "ko"
+      ]
+    },
+    {
+      "no": 1978,
+      "slug": "01978-medium-percentage-parser",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Percentage Parser"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ko"
+      ]
+    },
+    {
+      "no": 2070,
+      "slug": "02070-medium-drop-char",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal",
+        "infer"
+      ],
+      "related": [
+        2059
+      ],
+      "titles": {
+        "en": "Drop Char"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 2257,
+      "slug": "02257-medium-minusone",
+      "difficulty": "medium",
+      "tags": [
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "en": "MinusOne"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 2595,
+      "slug": "02595-medium-pickbytype",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [
+        2852
+      ],
+      "titles": {
+        "en": "PickByType"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 2688,
+      "slug": "02688-medium-startswith",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        2693
+      ],
+      "titles": {
+        "en": "StartsWith"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 2693,
+      "slug": "02693-medium-endswith",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        2688
+      ],
+      "titles": {
+        "en": "EndsWith"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 2757,
+      "slug": "02757-medium-partialbykeys",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "PartialByKeys"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ko"
+      ]
+    },
+    {
+      "no": 2759,
+      "slug": "02759-medium-requiredbykeys",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "RequiredByKeys"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 2793,
+      "slug": "02793-medium-mutable",
+      "difficulty": "medium",
+      "tags": [
+        "readonly",
+        "object-keys"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Mutable"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 2852,
+      "slug": "02852-medium-omitbytype",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [
+        2595
+      ],
+      "titles": {
+        "en": "OmitByType"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 2946,
+      "slug": "02946-medium-objectentries",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "ObjectEntries"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 3062,
+      "slug": "03062-medium-shift",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        16
+      ],
+      "titles": {
+        "en": "Shift"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 3188,
+      "slug": "03188-medium-tuple-to-nested-object",
+      "difficulty": "medium",
+      "tags": [
+        "object",
+        "tuple"
+      ],
+      "related": [
+        10,
+        11,
+        472,
+        730
+      ],
+      "titles": {
+        "en": "Tuple to Nested Object"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 3192,
+      "slug": "03192-medium-reverse",
+      "difficulty": "medium",
+      "tags": [
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Reverse"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 3196,
+      "slug": "03196-medium-flip-arguments",
+      "difficulty": "medium",
+      "tags": [
+        "arguments"
+      ],
+      "related": [
+        3192
+      ],
+      "titles": {
+        "en": "Flip Arguments"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 3243,
+      "slug": "03243-medium-flattendepth",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        459
+      ],
+      "titles": {
+        "en": "FlattenDepth"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 3326,
+      "slug": "03326-medium-bem-style-string",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal",
+        "union",
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "BEM style string"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 3376,
+      "slug": "03376-medium-inordertraversal",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "InorderTraversal"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4179,
+      "slug": "04179-medium-flip",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Flip"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4182,
+      "slug": "04182-medium-fibonacci-sequence",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "zh-CN": "斐波那契序列",
+        "en": "Fibonacci Sequence"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 4260,
+      "slug": "04260-medium-nomiwase",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal",
+        "infer",
+        "union"
+      ],
+      "related": [],
+      "titles": {
+        "ja": "文字の組み合わせ",
+        "en": "AllCombinations"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 4425,
+      "slug": "04425-medium-greater-than",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Greater Than"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4471,
+      "slug": "04471-medium-zip",
+      "difficulty": "medium",
+      "tags": [
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Zip"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4484,
+      "slug": "04484-medium-istuple",
+      "difficulty": "medium",
+      "tags": [
+        "tuple"
+      ],
+      "related": [
+        1042,
+        1097,
+        223
+      ],
+      "titles": {
+        "en": "IsTuple"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4499,
+      "slug": "04499-medium-chunk",
+      "difficulty": "medium",
+      "tags": [
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Chunk"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4518,
+      "slug": "04518-medium-fill",
+      "difficulty": "medium",
+      "tags": [
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Fill"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4803,
+      "slug": "04803-medium-trim-right",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        106,
+        108
+      ],
+      "titles": {
+        "en": "Trim Right"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ko"
+      ]
+    },
+    {
+      "no": 5117,
+      "slug": "05117-medium-without",
+      "difficulty": "medium",
+      "tags": [
+        "联合类型",
+        "数组"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "去除数组指定元素",
+        "en": "Without"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 5140,
+      "slug": "05140-medium-trunc",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Trunc"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 5153,
+      "slug": "05153-medium-indexof",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "IndexOf"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 5310,
+      "slug": "05310-medium-join",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Join"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 5317,
+      "slug": "05317-medium-lastindexof",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "LastIndexOf",
+        "en": "LastIndexOf"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 5360,
+      "slug": "05360-medium-unique",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "Unique",
+        "en": "Unique"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 5821,
+      "slug": "05821-medium-maptypes",
+      "difficulty": "medium",
+      "tags": [
+        "map",
+        "object",
+        "utils"
+      ],
+      "related": [],
+      "titles": {
+        "en": "MapTypes"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 7544,
+      "slug": "07544-medium-construct-tuple",
+      "difficulty": "medium",
+      "tags": [
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Construct Tuple"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 8640,
+      "slug": "08640-medium-number-range",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Number Range"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 8767,
+      "slug": "08767-medium-combination",
+      "difficulty": "medium",
+      "tags": [
+        "array",
+        "application",
+        "string"
+      ],
+      "related": [
+        296
+      ],
+      "titles": {
+        "en": "Combination"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 8987,
+      "slug": "08987-medium-subsequence",
+      "difficulty": "medium",
+      "tags": [
+        "union"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Subsequence"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 9142,
+      "slug": "09142-medium-checkrepeatedchars",
+      "difficulty": "medium",
+      "tags": [
+        "union",
+        "string"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "CheckRepeatedChars",
+        "en": "CheckRepeatedChars"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 9286,
+      "slug": "09286-medium-firstuniquecharindex",
+      "difficulty": "medium",
+      "tags": [
+        "string"
+      ],
+      "related": [],
+      "titles": {
+        "en": "FirstUniqueCharIndex"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 9616,
+      "slug": "09616-medium-parse-url-params",
+      "difficulty": "medium",
+      "tags": [
+        "infer",
+        "string",
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Parse URL Params"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 9896,
+      "slug": "09896-medium-get-middle-element",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "zh-CN": "获取数组的中间元素",
+        "en": "GetMiddleElement"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 9898,
+      "slug": "09898-medium-zhao-chu-mu-biao-shu-zu-zhong-zhi-chu-xian-guo-yi-ci-de-yuan-su",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "zh-CN": "找出目标数组中只出现过一次的元素",
+        "en": "Appear only once"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 9989,
+      "slug": "09989-medium-tong-ji-shu-zu-zhong-de-yuan-su-ge-shu",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "zh-CN": "统计数组中的元素个数",
+        "en": "Count Element Number To Object"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 10969,
+      "slug": "10969-medium-integer",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "整数",
+        "en": "Integer"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 16259,
+      "slug": "16259-medium-to-primitive",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "zh-CN": "将类型为字面类型（标签类型）的属性，转换为基本类型。",
+        "en": "ToPrimitive"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 17973,
+      "slug": "17973-medium-deepmutable",
+      "difficulty": "medium",
+      "tags": [
+        "readonly",
+        "deep"
+      ],
+      "related": [],
+      "titles": {
+        "en": "DeepMutable"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 18142,
+      "slug": "18142-medium-all",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "All",
+        "en": "All"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 18220,
+      "slug": "18220-medium-filter",
+      "difficulty": "medium",
+      "tags": [
+        "array",
+        "filter"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Filter"
+      },
+      "locales": [
+        "en",
+        "ko"
+      ]
+    },
+    {
+      "no": 19749,
+      "slug": "19749-medium-isequal",
+      "difficulty": "medium",
+      "tags": [
+        "utils"
+      ],
+      "related": [],
+      "titles": {
+        "en": "IsEqual"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 21104,
+      "slug": "21104-medium-findall",
+      "difficulty": "medium",
+      "tags": [
+        "template-literal",
+        "string"
+      ],
+      "related": [],
+      "titles": {
+        "en": "FindAll"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 21106,
+      "slug": "21106-medium-zu-he-jian-lei-xing-combination-key-type",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "zh-CN": "组合键类型 Combination key type",
+        "en": "Combination key type"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 21220,
+      "slug": "21220-medium-permutations-of-tuple",
+      "difficulty": "medium",
+      "tags": [
+        "union",
+        "tuple",
+        "conditional type",
+        "recursion"
+      ],
+      "related": [
+        296,
+        4260,
+        8767
+      ],
+      "titles": {
+        "en": "Permutations of Tuple"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 25170,
+      "slug": "25170-medium-replace-first",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Replace First"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 25270,
+      "slug": "25270-medium-transpose",
+      "difficulty": "medium",
+      "tags": [
+        "array",
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Transpose"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 26401,
+      "slug": "26401-medium-json-schema-to-typescript",
+      "difficulty": "medium",
+      "tags": [
+        "JSON"
+      ],
+      "related": [],
+      "titles": {
+        "en": "JSON Schema to TypeScript"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 27133,
+      "slug": "27133-medium-square",
+      "difficulty": "medium",
+      "tags": [
+        "tuple",
+        "array",
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Square"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 27152,
+      "slug": "27152-medium-triangular-number",
+      "difficulty": "medium",
+      "tags": [
+        "tuple",
+        "array",
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Triangular number"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 27862,
+      "slug": "27862-medium-cartesianproduct",
+      "difficulty": "medium",
+      "tags": [
+        "union"
+      ],
+      "related": [],
+      "titles": {
+        "en": "CartesianProduct"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 27932,
+      "slug": "27932-medium-mergeall",
+      "difficulty": "medium",
+      "tags": [
+        "object",
+        "array",
+        "union"
+      ],
+      "related": [],
+      "titles": {
+        "en": "MergeAll"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 27958,
+      "slug": "27958-medium-checkrepeatedtuple",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "zh-CN": "CheckRepeatedTuple",
+        "en": "CheckRepeatedTuple"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 28333,
+      "slug": "28333-medium-public-type",
+      "difficulty": "medium",
+      "tags": [
+        "object-keys"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Public Type"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 29650,
+      "slug": "29650-medium-extracttoobject",
+      "difficulty": "medium",
+      "tags": [
+        "object"
+      ],
+      "related": [],
+      "titles": {
+        "en": "ExtractToObject"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 29785,
+      "slug": "29785-medium-deep-omit",
+      "difficulty": "medium",
+      "tags": [
+        "omit object-keys deep"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Deep Omit"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 30301,
+      "slug": "30301-medium-isodd",
+      "difficulty": "medium",
+      "tags": [
+        "string"
+      ],
+      "related": [],
+      "titles": {
+        "en": "IsOdd"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 30430,
+      "slug": "30430-medium-tower-of-hanoi",
+      "difficulty": "medium",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Tower of hanoi"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 30958,
+      "slug": "30958-medium-pascals-triangle",
+      "difficulty": "medium",
+      "tags": [
+        "array",
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Pascal's triangle"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 30970,
+      "slug": "30970-medium-shitariteraru",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "ja": "確定した文字列リテラル",
+        "en": "IsFixedStringLiteralType"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 34007,
+      "slug": "34007-medium-compare-array-length",
+      "difficulty": "medium",
+      "tags": [
+        "recursion",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Compare Array Length"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 34857,
+      "slug": "34857-medium-defined-partial-record",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Defined Partial Record"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 35045,
+      "slug": "35045-medium-longest-common-prefix",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Longest Common Prefix"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 35191,
+      "slug": "35191-medium-trace",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "ja": "Trace",
+        "en": "Trace"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 35252,
+      "slug": "35252-medium-isalphabet",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "IsAlphabet"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 35991,
+      "slug": "35991-medium-myuppercase",
+      "difficulty": "medium",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "MyUppercase"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 6,
+      "slug": "00006-hard-simple-vue",
+      "difficulty": "hard",
+      "tags": [
+        "this",
+        "application",
+        "vue"
+      ],
+      "related": [
+        213
+      ],
+      "titles": {
+        "zh-CN": "简单的 Vue 类型",
+        "en": "Simple Vue"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 17,
+      "slug": "00017-hard-currying-1",
+      "difficulty": "hard",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        14,
+        16,
+        462
+      ],
+      "titles": {
+        "zh-CN": "柯里化 1",
+        "en": "Currying 1"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 55,
+      "slug": "00055-hard-union-to-intersection",
+      "difficulty": "hard",
+      "tags": [
+        "utils",
+        "infer"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "联合类型转化为交叉类型",
+        "en": "Union to Intersection"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 57,
+      "slug": "00057-hard-get-required",
+      "difficulty": "hard",
+      "tags": [
+        "utils",
+        "infer"
+      ],
+      "related": [
+        59
+      ],
+      "titles": {
+        "zh-CN": "获得必需的属性",
+        "en": "Get Required"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 59,
+      "slug": "00059-hard-get-optional",
+      "difficulty": "hard",
+      "tags": [
+        "utils",
+        "infer"
+      ],
+      "related": [
+        57
+      ],
+      "titles": {
+        "zh-CN": "获得可选属性",
+        "en": "Get Optional"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 89,
+      "slug": "00089-hard-required-keys",
+      "difficulty": "hard",
+      "tags": [
+        "utils"
+      ],
+      "related": [
+        5
+      ],
+      "titles": {
+        "zh-CN": "必需的键",
+        "en": "Required Keys"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 90,
+      "slug": "00090-hard-optional-keys",
+      "difficulty": "hard",
+      "tags": [
+        "utils"
+      ],
+      "related": [
+        89,
+        5
+      ],
+      "titles": {
+        "zh-CN": "可选类型的键",
+        "en": "Optional Keys"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 112,
+      "slug": "00112-hard-capitalizewords",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Capitalize Words"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 114,
+      "slug": "00114-hard-camelcase",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        612
+      ],
+      "titles": {
+        "en": "CamelCase"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 147,
+      "slug": "00147-hard-c-printf-parser",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "C-printf Parser"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 213,
+      "slug": "00213-hard-vue-basic-props",
+      "difficulty": "hard",
+      "tags": [
+        "vue",
+        "application"
+      ],
+      "related": [
+        6
+      ],
+      "titles": {
+        "en": "Vue Basic Props"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 223,
+      "slug": "00223-hard-isany",
+      "difficulty": "hard",
+      "tags": [
+        "utils"
+      ],
+      "related": [
+        1042,
+        1097,
+        4484
+      ],
+      "titles": {
+        "en": "IsAny"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 270,
+      "slug": "00270-hard-typed-get",
+      "difficulty": "hard",
+      "tags": [
+        "utils",
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Typed Get"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 300,
+      "slug": "00300-hard-string-to-number",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "String to Number"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 399,
+      "slug": "00399-hard-tuple-filter",
+      "difficulty": "hard",
+      "tags": [
+        "tuple",
+        "infer"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Tuple Filter"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 472,
+      "slug": "00472-hard-tuple-to-enum-object",
+      "difficulty": "hard",
+      "tags": [
+        "tuple",
+        "template-literal"
+      ],
+      "related": [
+        10,
+        11,
+        730,
+        3188
+      ],
+      "titles": {
+        "en": "Tuple to Enum Object"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja"
+      ]
+    },
+    {
+      "no": 545,
+      "slug": "00545-hard-printf",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "printf"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 553,
+      "slug": "00553-hard-deep-object-to-unique",
+      "difficulty": "hard",
+      "tags": [
+        "deep"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Deep object to unique"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 651,
+      "slug": "00651-hard-length-of-string-2",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [
+        298
+      ],
+      "titles": {
+        "en": "Length of String 2"
+      },
+      "locales": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "no": 730,
+      "slug": "00730-hard-union-to-tuple",
+      "difficulty": "hard",
+      "tags": [
+        "union",
+        "tuple",
+        "infer"
+      ],
+      "related": [
+        10,
+        11,
+        55,
+        472,
+        3188
+      ],
+      "titles": {
+        "en": "Union to Tuple"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 847,
+      "slug": "00847-hard-string-join",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "String Join"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 956,
+      "slug": "00956-hard-deeppick",
+      "difficulty": "hard",
+      "tags": [
+        "deep"
+      ],
+      "related": [],
+      "titles": {
+        "en": "DeepPick"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 1290,
+      "slug": "01290-hard-pinia",
+      "difficulty": "hard",
+      "tags": [
+        "this",
+        "vue"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Pinia"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 1383,
+      "slug": "01383-hard-camelize",
+      "difficulty": "hard",
+      "tags": [
+        "union",
+        "recursion"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Camelize"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 2059,
+      "slug": "02059-hard-drop-string",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal",
+        "infer"
+      ],
+      "related": [
+        2070
+      ],
+      "titles": {
+        "en": "Drop String"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 2822,
+      "slug": "02822-hard-split",
+      "difficulty": "hard",
+      "tags": [
+        "string",
+        "split",
+        "array",
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Split"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 2828,
+      "slug": "02828-hard-classpublickeys",
+      "difficulty": "hard",
+      "tags": [
+        "utils"
+      ],
+      "related": [],
+      "titles": {
+        "en": "ClassPublicKeys"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 2857,
+      "slug": "02857-hard-isrequiredkey",
+      "difficulty": "hard",
+      "tags": [
+        "utils"
+      ],
+      "related": [],
+      "titles": {
+        "en": "IsRequiredKey"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 2949,
+      "slug": "02949-hard-objectfromentries",
+      "difficulty": "hard",
+      "tags": [
+        "object"
+      ],
+      "related": [
+        55
+      ],
+      "titles": {
+        "en": "ObjectFromEntries"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 4037,
+      "slug": "04037-hard-ispalindrome",
+      "difficulty": "hard",
+      "tags": [
+        "string"
+      ],
+      "related": [],
+      "titles": {
+        "en": "IsPalindrome"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 5181,
+      "slug": "05181-hard-mutable-keys",
+      "difficulty": "hard",
+      "tags": [
+        "utils"
+      ],
+      "related": [
+        2793
+      ],
+      "titles": {
+        "en": "Mutable Keys"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 5423,
+      "slug": "05423-hard-intersection",
+      "difficulty": "hard",
+      "tags": [
+        "union",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Intersection"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 6141,
+      "slug": "06141-hard-binary-to-decimal",
+      "difficulty": "hard",
+      "tags": [
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Binary to Decimal"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 7258,
+      "slug": "07258-hard-object-key-paths",
+      "difficulty": "hard",
+      "tags": [
+        "object-keys"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Object Key Paths"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 8804,
+      "slug": "08804-hard-two-sum",
+      "difficulty": "hard",
+      "tags": [
+        "array",
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "两数之和",
+        "en": "Two Sum"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 9155,
+      "slug": "09155-hard-validdate",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "ValidDate"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 9160,
+      "slug": "09160-hard-assign",
+      "difficulty": "hard",
+      "tags": [
+        "object",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Assign"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 9384,
+      "slug": "09384-hard-maximum",
+      "difficulty": "hard",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Maximum"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 9775,
+      "slug": "09775-hard-capitalize-nest-object-keys",
+      "difficulty": "hard",
+      "tags": [
+        "object",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Capitalize Nest Object Keys"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 13580,
+      "slug": "13580-hard-replace-union",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Replace Union"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 14080,
+      "slug": "14080-hard-fizzbuzz",
+      "difficulty": "hard",
+      "tags": [
+        "array",
+        "math",
+        "infer"
+      ],
+      "related": [],
+      "titles": {
+        "en": "FizzBuzz"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 14188,
+      "slug": "14188-hard-run-length-encoding",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Run-length encoding"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 15260,
+      "slug": "15260-hard-tree-path-array",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Tree path array"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 19458,
+      "slug": "19458-hard-snakecase",
+      "difficulty": "hard",
+      "tags": [
+        "template-literal",
+        "string"
+      ],
+      "related": [],
+      "titles": {
+        "en": "SnakeCase"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 25747,
+      "slug": "25747-hard-isnegativenumber",
+      "difficulty": "hard",
+      "tags": [
+        "number",
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "IsNegativeNumber"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 28143,
+      "slug": "28143-hard-optionalundefined",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "OptionalUndefined"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 30178,
+      "slug": "30178-hard-unique-items",
+      "difficulty": "hard",
+      "tags": [
+        "tuple",
+        "application",
+        "cif"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Unique Items"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 30575,
+      "slug": "30575-hard-bitwisexor",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "BitwiseXOR"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 31797,
+      "slug": "31797-hard-sudoku",
+      "difficulty": "hard",
+      "tags": [
+        "union",
+        "array",
+        "tuple",
+        "game"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Sudoku"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 31824,
+      "slug": "31824-hard-length-of-string-3",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [
+        298
+      ],
+      "titles": {
+        "en": "Length of String 3"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 32427,
+      "slug": "32427-hard-unbox",
+      "difficulty": "hard",
+      "tags": [
+        "utils",
+        "promise",
+        "function",
+        "tuple",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Unbox"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 32532,
+      "slug": "32532-hard-binary-addition",
+      "difficulty": "hard",
+      "tags": [
+        "recursion",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Binary Addition"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 33763,
+      "slug": "33763-hard-union-to-object-from-key",
+      "difficulty": "hard",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Union to Object from key"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 34286,
+      "slug": "34286-hard-take-elements",
+      "difficulty": "hard",
+      "tags": [
+        "array"
+      ],
+      "related": [
+        216
+      ],
+      "titles": {
+        "en": "Take Elements"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 35314,
+      "slug": "35314-hard-valid-sudoku",
+      "difficulty": "hard",
+      "tags": [
+        "array",
+        "math",
+        "game"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Valid Sudoku"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 5,
+      "slug": "00005-extreme-readonly-keys",
+      "difficulty": "extreme",
+      "tags": [
+        "utils",
+        "object-keys"
+      ],
+      "related": [],
+      "titles": {
+        "zh-CN": "获取只读属性",
+        "en": "Get Readonly Keys"
+      },
+      "locales": [
+        "en",
+        "zh-CN",
+        "ja",
+        "ko",
+        "pt-BR"
+      ]
+    },
+    {
+      "no": 151,
+      "slug": "00151-extreme-query-string-parser",
+      "difficulty": "extreme",
+      "tags": [
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Query String Parser"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 216,
+      "slug": "00216-extreme-slice",
+      "difficulty": "extreme",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Slice"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 274,
+      "slug": "00274-extreme-integers-comparator",
+      "difficulty": "extreme",
+      "tags": [
+        "template-literal",
+        "math"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Integers Comparator"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 462,
+      "slug": "00462-extreme-currying-2",
+      "difficulty": "extreme",
+      "tags": [],
+      "related": [
+        17
+      ],
+      "titles": {
+        "zh-CN": "柯里化 2",
+        "en": "Currying 2"
+      },
+      "locales": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    {
+      "no": 476,
+      "slug": "00476-extreme-sum",
+      "difficulty": "extreme",
+      "tags": [
+        "math",
+        "template-literal"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Sum"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 517,
+      "slug": "00517-extreme-multiply",
+      "difficulty": "extreme",
+      "tags": [
+        "math",
+        "template-literal"
+      ],
+      "related": [
+        476
+      ],
+      "titles": {
+        "en": "Multiply"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 697,
+      "slug": "00697-extreme-tag",
+      "difficulty": "extreme",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Tag"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 734,
+      "slug": "00734-extreme-inclusive-range",
+      "difficulty": "extreme",
+      "tags": [
+        "infer",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Inclusive Range"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 741,
+      "slug": "00741-extreme-sort",
+      "difficulty": "extreme",
+      "tags": [
+        "infer",
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Sort"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 869,
+      "slug": "00869-extreme-distributeunions",
+      "difficulty": "extreme",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "DistributeUnions"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 925,
+      "slug": "00925-extreme-assert-array-index",
+      "difficulty": "extreme",
+      "tags": [
+        "array"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Assert Array Index"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 6228,
+      "slug": "06228-extreme-json-parser",
+      "difficulty": "extreme",
+      "tags": [
+        "template-literal",
+        "JSON"
+      ],
+      "related": [],
+      "titles": {
+        "en": "JSON Parser"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 7561,
+      "slug": "07561-extreme-subtract",
+      "difficulty": "extreme",
+      "tags": [
+        "tuple"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Subtract"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 31447,
+      "slug": "31447-extreme-countreversepairs",
+      "difficulty": "extreme",
+      "tags": [],
+      "related": [
+        741
+      ],
+      "titles": {
+        "en": "CountReversePairs"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 31997,
+      "slug": "31997-extreme-parameter-intersection",
+      "difficulty": "extreme",
+      "tags": [
+        "parameters",
+        "array",
+        "variadic",
+        "optional",
+        "rest",
+        "intersection"
+      ],
+      "related": [],
+      "titles": {
+        "en": "Parameter Intersection"
+      },
+      "locales": [
+        "en"
+      ]
+    },
+    {
+      "no": 33345,
+      "slug": "33345-extreme-dynamic-route",
+      "difficulty": "extreme",
+      "tags": [],
+      "related": [],
+      "titles": {
+        "en": "Dynamic Route"
+      },
+      "locales": [
+        "en"
+      ]
+    }
+  ]
+}

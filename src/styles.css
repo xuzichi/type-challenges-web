@@ -1,0 +1,222 @@
+@import 'tailwindcss';
+
+/*
+ * 主题通过 [data-theme] + CSS 变量切换，组件里只用语义化类名
+ * （bg-surface / text-muted / border-border …），因此不需要 dark: 变体。
+ */
+:root,
+[data-theme='dark'] {
+  --tc-bg: #0b0d12;
+  --tc-surface: #12151d;
+  --tc-surface-muted: #191d28;
+  --tc-border: #262b38;
+  --tc-fg: #e6e8ef;
+  --tc-muted: #98a1b2;
+  --tc-accent: #4c8dff;
+  --tc-accent-fg: #ffffff;
+  --tc-success: #3ecf8e;
+  --tc-warning: #f2b13d;
+  --tc-danger: #ff6b6b;
+  --tc-editor: vs-dark;
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --tc-bg: #f6f7fa;
+  --tc-surface: #ffffff;
+  --tc-surface-muted: #eef1f6;
+  --tc-border: #dde2ea;
+  --tc-fg: #1a1f2b;
+  --tc-muted: #667085;
+  --tc-accent: #2563eb;
+  --tc-accent-fg: #ffffff;
+  --tc-success: #12a150;
+  --tc-warning: #b45309;
+  --tc-danger: #d92d20;
+  --tc-editor: vs;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--tc-bg);
+  --color-surface: var(--tc-surface);
+  --color-surface-muted: var(--tc-surface-muted);
+  --color-border: var(--tc-border);
+  --color-fg: var(--tc-fg);
+  --color-muted: var(--tc-muted);
+  --color-accent: var(--tc-accent);
+  --color-accent-fg: var(--tc-accent-fg);
+  --color-success: var(--tc-success);
+  --color-warning: var(--tc-warning);
+  --color-danger: var(--tc-danger);
+  --font-mono:
+    'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--tc-bg);
+  color: var(--tc-fg);
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    'PingFang SC',
+    'Hiragino Sans GB',
+    'Microsoft YaHei',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 题面里的代码块与表格 */
+.tc-prose {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.tc-prose > *:first-child {
+  margin-top: 0;
+}
+.tc-prose h1,
+.tc-prose h2,
+.tc-prose h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.4em 0 0.6em;
+}
+.tc-prose p,
+.tc-prose ul,
+.tc-prose ol {
+  margin: 0.7em 0;
+}
+.tc-prose ul,
+.tc-prose ol {
+  padding-left: 1.4em;
+}
+.tc-prose ul {
+  list-style: disc;
+}
+.tc-prose ol {
+  list-style: decimal;
+}
+.tc-prose a {
+  color: var(--tc-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.tc-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--tc-surface-muted);
+  border: 1px solid var(--tc-border);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+.tc-prose pre {
+  background: var(--tc-surface-muted);
+  border: 1px solid var(--tc-border);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  margin: 0.9em 0;
+}
+.tc-prose pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.82em;
+}
+.tc-prose blockquote {
+  border-left: 3px solid var(--tc-border);
+  margin: 0.9em 0;
+  padding: 0.1em 0 0.1em 0.9em;
+  color: var(--tc-muted);
+}
+.tc-prose hr {
+  border: none;
+  border-top: 1px solid var(--tc-border);
+  margin: 1.2em 0;
+}
+.tc-prose img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.tc-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+}
+.tc-prose th,
+.tc-prose td {
+  border: 1px solid var(--tc-border);
+  padding: 0.35em 0.6em;
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--tc-border);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/*
+ * 难度徽章：用 --diff-* 三个变量描述配色，浅/深色主题各一份，
+ * 这样组件侧只写 `tc-diff tc-diff-easy` + 引用变量。
+ */
+.tc-diff {
+  color: var(--diff-fg);
+  background: var(--diff-bg);
+  border-color: var(--diff-bd);
+}
+.tc-diff-warm {
+  --diff-fg: #5b6472;
+  --diff-bg: #5b647214;
+  --diff-bd: #5b64723d;
+}
+.tc-diff-easy {
+  --diff-fg: #0f8a49;
+  --diff-bg: #12a15014;
+  --diff-bd: #12a1503d;
+}
+.tc-diff-medium {
+  --diff-fg: #a35a09;
+  --diff-bg: #b4530914;
+  --diff-bd: #b453093d;
+}
+.tc-diff-hard {
+  --diff-fg: #c62b21;
+  --diff-bg: #d92d2014;
+  --diff-bd: #d92d203d;
+}
+.tc-diff-extreme {
+  --diff-fg: #7c2fd0;
+  --diff-bg: #9333ea14;
+  --diff-bd: #9333ea3d;
+}
+[data-theme='dark'] .tc-diff-warm {
+  --diff-fg: #9aa3b2;
+}
+[data-theme='dark'] .tc-diff-easy {
+  --diff-fg: #3ecf8e;
+}
+[data-theme='dark'] .tc-diff-medium {
+  --diff-fg: #f2b13d;
+}
+[data-theme='dark'] .tc-diff-hard {
+  --diff-fg: #ff7a70;
+}
+[data-theme='dark'] .tc-diff-extreme {
+  --diff-fg: #c084fc;
+}

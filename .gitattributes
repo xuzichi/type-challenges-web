@@ -1,0 +1,14 @@
+# 统一换行符，避免 Windows 上的 CRLF 让 src/data/** 这些生成物产生无意义 diff
+* text=auto eol=lf
+
+# 二进制
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.png binary
+*.ico binary
+
+# GitHub 语言统计：把生成物与文档排除出 TS 统计
+src/data/challenges/*.json linguist-generated=true
+src/data/index.json linguist-generated=true
+package-lock.json -diff linguist-generated=true

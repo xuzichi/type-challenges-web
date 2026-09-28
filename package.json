@@ -1,0 +1,41 @@
+{
+  "name": "type-challenges-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Browser-based online judge for type-challenges, deployable as a static site on GitHub Pages",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/postbuild.mjs",
+    "preview": "vite preview",
+    "data": "node scripts/fetch-challenges.mjs",
+    "verify:judge": "node scripts/verify-judge.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:browser": "node scripts/smoke-browser.mjs",
+    "test": "npm run typecheck && npm run verify:judge"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "dompurify": "^3.4.16",
+    "lz-string": "^1.5.0",
+    "marked": "^18.0.14",
+    "monaco-editor": "^0.57.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "playwright-core": "^1.63.0",
+    "tailwindcss": "^4.3.3",
+    "tar": "^7.5.22",
+    "typescript": "5.9.3",
+    "vite": "^8.3.1",
+    "yaml": "^2.9.1"
+  }
+}
