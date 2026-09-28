@@ -353,9 +353,11 @@ push main → checkout → configure-pages（拿 base_path）→ setup-node 22 +
   `VITE_BASE`（CI 由 `configure-pages` 的 `base_path` 提供）→ `GITHUB_REPOSITORY`（项目页 `/<repo>/`，
   用户页 `/`）→ `/`（本地开发）。仓库改名不需要改代码。
 - **SPA 深链**：`scripts/postbuild.mjs` 把 `dist/index.html` 复制成 `dist/404.html`。
-  Pages 对未知路径返回它，SPA 在同一 URL 下接管渲染 —— 这是 Pages 上用 history 路由的标准做法
-  （已在本地用 `vite preview` 的 SPA 回退 + 冒烟测试验证过深链）。
-  万一某次部署的 404 兜底失效，把 `VITE_ROUTER_MODE=hash` 传给构建即可无损切到 hash 路由。
+  Pages 对未知路径返回它，SPA 在同一 URL 下接管渲染 —— 这是 Pages 上用 history 路由的标准做法。
+  **一个必须知道的副作用**：这些深链的 HTTP 状态码就是 404（页面内容却是对的）；
+  实测中 5 次深链导航对应 5 个 404 文档请求，静态资源无任何失败。
+  如果介意（例如有可用性监控、或希望爬虫/分享卡片拿到 200），
+  把构建环境变量 `VITE_ROUTER_MODE=hash` 设为 `hash` 即可无损切到 hash 路由（代价是 URL 里多一个 `#`）。
 - **`.nojekyll`**：避免 Pages 的 Jekyll 处理弄丢下划线开头的文件。
 - **判题语义回归进 CI**：`npm run verify:judge` 是纯离线的 Node 脚本（用仓库里已固化的数据），
   所以它能作为构建前置门禁 —— 判题错了，站点就不会被发布。
@@ -413,9 +415,10 @@ push main → checkout → configure-pages（拿 base_path）→ setup-node 22 +
 它的价值在于 9.1 覆盖不到的部分：Worker 能不能在真实浏览器里起来、Monaco 的渲染与懒加载分片路径对不对、
 模型生命周期对不对、localStorage 的持久化有没有生效。
 
-部署配置也在本地做过等效验证：用 `VITE_BASE=/<repo>/` 构建后，`dist/index.html` 里的
-资源与 favicon 都正确带上 `/<repo>/` 前缀，`/<repo>/challenge/<slug>` 探链也能拿到 200 并指向正确的资源前缀
-（浏览器地址栏路径不变，由前端路由接管）。
+部署配置也在**线上实测过**：`SMOKE_BASE=https://xuzichi.github.io/type-challenges-web npm run test:browser`
+就是拿同一套 14 项断言跑已部署的站点（`scripts/smoke-browser.mjs` 检测到 `SMOKE_BASE` 就不再拉起本地 preview）。
+它同时验证了 CI 的 base 路径改写（资源前缀 `/type-challenges-web/`）、深链兜底与判题链路 ——
+线上 14/14 通过，其中 5 个 404 全部是预期内的深链文档请求。
 
 ### 9.3 类型检查 —— `npm run typecheck`
 

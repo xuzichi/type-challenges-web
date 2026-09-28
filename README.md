@@ -33,6 +33,7 @@ npm run dev          # http://localhost:5173
 | `npm run preview` | 本地预览构建产物 |
 | `npm test` | 类型检查 + 判题语义回归（快、离线） |
 | `npm run test:browser` | 构建产物的真实浏览器冒烟测试（需先 `npm run build`，用本机 Chrome/Edge） |
+| `SMOKE_BASE=<url> npm run test:browser` | 拿同一套断言跑**已部署的站点**（不拉起本地 preview） |
 | `npm run data` | 拉取/更新上游题库（读取 `scripts/upstream.json` 里锁定的 commit） |
 | `npm run verify:judge` | 单独跑判题语义回归（190 题模板必须全判失败等 20 项断言） |
 
@@ -48,7 +49,15 @@ npm run dev          # http://localhost:5173
 （项目页是 `/<仓库名>`，用户页 `<用户名>.github.io` 是 `/`），因此**改仓库名不需要动代码**。
 
 深链（例如 `https://…/<仓库名>/challenge/00004-easy-pick`）依靠构建时生成的 `404.html` 兜底。
-若某些环境下兜底不生效，把构建环境变量 `VITE_ROUTER_MODE` 设为 `hash` 即可无损切到 hash 路由。
+**注意**：这些深链的 HTTP 状态码就是 `404`（页面内容却是对的）—— 这是 GitHub Pages 静态托管的固有行为。
+如果介意（可用性监控、爬虫或分享卡片拿到 404），把构建环境变量 `VITE_ROUTER_MODE` 设为 `hash`，
+即可无损切到 hash 路由（URL 形如 `…/#/challenge/00004-easy-pick`）。
+
+部署完可以用同一套端到端断言直接验证线上：
+
+```bash
+SMOKE_BASE=https://<用户名>.github.io/<仓库名> npm run test:browser
+```
 
 ## 目录结构
 

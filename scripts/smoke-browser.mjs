@@ -26,7 +26,9 @@ import { createRequire } from 'node:module'
 const require = createRequire(import.meta.url)
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const PORT = Number(process.env.SMOKE_PORT ?? 4174)
-const BASE = `http://localhost:${PORT}`
+/** 指定 SMOKE_BASE 时直接跑已部署的站点（例如 https://<user>.github.io/<repo>），不再拉起本地 preview。 */
+const EXTERNAL_BASE = process.env.SMOKE_BASE
+const BASE = EXTERNAL_BASE ?? `http://localhost:${PORT}`
 
 let chromium
 try {
@@ -74,15 +76,22 @@ try {
   viteBin = path.join(ROOT, 'node_modules', 'vite', 'bin', 'vite.js')
 }
 
-const server = spawn(process.execPath, [viteBin, 'preview', '--port', String(PORT), '--strictPort'], {
-  cwd: ROOT,
-  stdio: 'ignore',
-})
+const server = EXTERNAL_BASE
+  ? null
+  : spawn(
+      process.execPath,
+      [viteBin, 'preview', '--port', String(PORT), '--strictPort'],
+      { cwd: ROOT, stdio: 'ignore' },
+    )
 
 let browser
 try {
   if (!(await waitForServer(`${BASE}/`))) {
-    throw new Error(`vite preview 未能在 ${PORT} 端口就绪（先执行 npm run build）`)
+    throw new Error(
+      EXTERNAL_BASE
+        ? `站点 ${BASE} 不可达`
+        : `vite preview 未能在 ${PORT} 端口就绪（先执行 npm run build）`,
+    )
   }
 
   browser = await launchBrowser()
@@ -90,9 +99,19 @@ try {
   const page = await context.newPage()
 
   const consoleErrors = []
+  const badResponses = []
   page.on('pageerror', (error) => consoleErrors.push(`pageerror: ${error.message}`))
   page.on('console', (message) => {
     if (message.type() === 'error') consoleErrors.push(`console: ${message.text()}`)
+  })
+  page.on('response', (response) => {
+    if (response.status() >= 400) {
+      badResponses.push({
+        status: response.status(),
+        type: response.request().resourceType(),
+        url: response.url(),
+      })
+    }
   })
 
   const setAnswer = async (text) => {
@@ -168,12 +187,22 @@ try {
   const settingsText = await page.locator('body').innerText()
   check('设置页渲染（含云同步与本地数据）', settingsText.includes('GitHub Token') && settingsText.includes('导出进度'))
 
-  check('运行期没有 JS 报错', consoleErrors.length === 0, consoleErrors.slice(0, 6).join('\n    '))
+  // 部署在 GitHub Pages 时，深链本身就是靠 404.html 兜底的，所以文档请求会带 404 状态码
+  // （这是 Pages 的行为，不是本站的 bug）。真正要断言的是：**没有任何静态资源加载失败**，
+  // 且除了那些预期的文档 404 之外没有其它 JS 报错。
+  const assetFailures = badResponses.filter((item) => item.type !== 'document')
+  check(
+    `静态资源全部加载成功（404 仅来自深链的 SPA 兜底文档请求：${badResponses.length} 个）`,
+    assetFailures.length === 0,
+    JSON.stringify(assetFailures.slice(0, 5), null, 2),
+  )
+  const realErrors = consoleErrors.filter((text) => !/Failed to load resource/.test(text))
+  check('除上述预期 404 外没有 JS 报错', realErrors.length === 0, realErrors.slice(0, 6).join('\n    '))
 } catch (error) {
   check('冒烟测试流程未抛异常', false, String(error))
 } finally {
   await browser?.close()
-  server.kill()
+  server?.kill()
 }
 
 const failed = results.filter((item) => !item.ok).length
